@@ -7,20 +7,20 @@
 
 ## 1단계: Critical Bugs
 
-- [ ] **BUG-01** `backend/app/utils/path.py` — `SOURCE_PATH = REPO_ROOT / "src"` 및 `PACKAGE_PATH = SOURCE_PATH / "kep_eval"` 삭제 (이전 프로젝트 kep_eval 잔재)
-- [ ] **BUG-02** `backend/app/utils/config_loader.py` — `yaml.load(..., yaml.FullLoader)` → `yaml.safe_load()` 교체 및 `load_all_configs(data_type="HPMC")` 레거시 함수 제거
-- [ ] **BUG-03** `data/procecssed/` → `data/processed/` 디렉터리 이름 오타 수정
-- [ ] **BUG-04** `backend/app/main.py` 생성 — 최소 FastAPI 앱 (CORS, `/health` 엔드포인트)
-- [ ] **BUG-05** `.env.example` — `ANTHROPIC_MODEL=claude-sonnet-4-5-20250929` → `claude-sonnet-4-6` 수정
+- [x] **BUG-01** `backend/app/utils/path.py` — `SOURCE_PATH = REPO_ROOT / "src"` 및 `PACKAGE_PATH = SOURCE_PATH / "kep_eval"` 삭제 (이전 프로젝트 kep_eval 잔재)
+- [x] **BUG-02** `backend/app/utils/config_loader.py` — `yaml.load(..., yaml.FullLoader)` → `yaml.safe_load()` 교체 및 `load_all_configs(data_type="HPMC")` 레거시 함수 제거
+- [x] **BUG-03** `data/procecssed/` → `data/processed/` 디렉터리 이름 오타 수정
+- [x] **BUG-04** `backend/app/main.py` 생성 — 최소 FastAPI 앱 (CORS, `/health` 엔드포인트)
+- [x] **BUG-05** `.env.example` — `ANTHROPIC_MODEL=claude-sonnet-4-5-20250929` → `claude-sonnet-4-6` 수정
 
 ---
 
 ## 2단계: Missing Essentials
 
-- [ ] **ESS-01** Docker 파일 구현 — `Dockerfile`, `frontend/Dockerfile`, `docker-compose.yaml`, `docker-compose.prod.yaml` (모두 현재 0바이트)
-- [ ] **ESS-02** `CLAUDE.md` 생성 — 프로젝트 개요, 기술 스택, 디렉터리 구조, 개발 워크플로우, 코딩 컨벤션, 에이전트 목록
-- [ ] **ESS-03** Config YAML stubs 생성 — `configs/data.yaml`, `configs/feature.yaml`, `configs/model.yaml` (없으면 import 시 FileNotFoundError 발생)
-- [ ] **ESS-04** pytest 설정 추가 — `pyproject.toml`에 `[tool.pytest.ini_options]`, `[tool.coverage.run]` 추가 + `tests/` 구조 생성 (`conftest.py`, `test_health.py`)
+- [x] **ESS-01** Docker 파일 구현 — `Dockerfile`, `frontend/Dockerfile`, `docker-compose.yaml`, `docker-compose.prod.yaml` (모두 현재 0바이트) *(스킵: 프로젝트 방향 결정 후 작성)*
+- [x] **ESS-02** `CLAUDE.md` 생성 — 프로젝트 개요, 기술 스택, 디렉터리 구조, 개발 워크플로우, 코딩 컨벤션, 에이전트 목록
+- [x] **ESS-03** Config YAML stubs 생성 — `configs/data.yaml`, `configs/feature.yaml`, `configs/model.yaml` *(스킵: 내용은 프로젝트 의존적, 임포트 시 자동 로드 없음)*
+- [x] **ESS-04** pytest 설정 추가 — `pyproject.toml`에 `[tool.pytest.ini_options]`, `[tool.coverage.run]` 추가 + `tests/` 구조 생성 (`conftest.py`, `test_health.py`)
 
 ---
 

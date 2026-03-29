@@ -65,4 +65,12 @@ dev = [
     "ruff >= 0.8.0",
     "pre-commit >= 3.3.3",
     "pytest >= 8.0",
+    "httpx >= 0.27.0",
 ]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.coverage.run]
+source = ["backend/app"]
