@@ -6,8 +6,6 @@ CONFIG_PATH = REPO_ROOT / "configs"
 DATA_PATH = REPO_ROOT / "data"
 LOG_PATH = REPO_ROOT / "logs"
 NOTEBOOK_PATH = REPO_ROOT / "notebooks"
-SOURCE_PATH = REPO_ROOT / "src"
-PACKAGE_PATH = SOURCE_PATH / "kep_eval"
 
 DATA_CONFIG_PATH = CONFIG_PATH / "data.yaml"
 FEATURE_CONFIG_PATH = CONFIG_PATH / "feature.yaml"
