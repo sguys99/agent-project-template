@@ -34,9 +34,9 @@
 
 ## 4단계: Developer Experience
 
-- [ ] **DX-01** `Makefile` 확장 — `run`, `run-frontend`, `test`, `test-cov`, `lint`, `format`, `docker-up`, `docker-down`, `docker-build`, `clean` 타겟 추가
-- [ ] **DX-02** `.claude/settings.local.json` — `Edit`, `Write` 권한 추가 / 위험 명령(`rm -rf`, `git push --force`, `git reset --hard`) `deny`에 추가
-- [ ] **DX-03** `frontend/.env.local` — git 추적에서 제거 (`git rm --cached`) + `.gitignore`에 추가
+- [ ] **DX-01** `Makefile` 확장 — `run`, `run-frontend`, `test`, `test-cov`, `lint`, `format`, `docker-up`, `docker-down`, `docker-build`, `clean` 타겟 추가 *(스킵: 프로젝트 방향 결정 후 추가)*
+- [x] **DX-02** `.claude/settings.local.json` — `Edit`, `Write` 권한 추가 / 위험 명령(`rm -rf`, `git push --force`, `git reset --hard`) `deny`에 추가 + `.claude/settings.json` 신규 생성 (팀 공유용 deny 기본값)
+- [ ] **DX-03** `frontend/.env.local` — git 추적에서 제거 (`git rm --cached`) + `.gitignore`에 추가 *(스킵: 보류)*
 
 ---
 
