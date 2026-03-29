@@ -74,3 +74,6 @@ pythonpath = ["."]
 
 [tool.coverage.run]
 source = ["backend/app"]
+
+[tool.coverage.report]
+show_missing = true

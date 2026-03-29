@@ -26,9 +26,9 @@
 
 ## 3단계: Code Quality
 
-- [ ] **CQ-01** `pyproject.toml` — `[tool.pytest.ini_options]`, `[tool.coverage.run]`, `[tool.coverage.report]` 섹션 추가
-- [ ] **CQ-02** `.pre-commit-config.yaml` — 파일 크기 제한 `--maxkb=30000` (30MB) → `--maxkb=500` (500KB) 축소
-- [ ] **CQ-03** `.pre-commit-config.yaml` — ruff 버전 `v0.8.4` → 최신 버전으로 업데이트
+- [x] **CQ-01** `pyproject.toml` — `[tool.pytest.ini_options]`, `[tool.coverage.run]`, `[tool.coverage.report]` 섹션 추가
+- [ ] **CQ-02** `.pre-commit-config.yaml` — 파일 크기 제한 `--maxkb=30000` (30MB) → `--maxkb=500` (500KB) 축소 *(스킵: docs/ 대용량 문서 수용 필요)*
+- [x] **CQ-03** `.pre-commit-config.yaml` — ruff 버전 `v0.8.4` → `v0.15.8` 업데이트
 
 ---
 
