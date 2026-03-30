@@ -52,8 +52,8 @@
 
 ## 6단계: Documentation
 
-- [ ] **DOC-01** `docs/PRD-template.md` — OathKeeper 완성 PRD를 `docs/examples/oathkeeper-prd.md`로 이동, 본 파일을 blank template으로 교체
-- [ ] **DOC-02** `docs/task-plan-template.md` — OathKeeper 구현 계획을 `docs/examples/oathkeeper-task-plan.md`로 이동, 본 파일을 generic template으로 교체
+- [x] **DOC-01** `docs/PRD-template.md` — OathKeeper 완성 PRD를 `docs/examples/oathkeeper-prd.md`로 이동, 본 파일을 blank template으로 교체
+- [x] **DOC-02** `docs/task-plan-template.md` — OathKeeper 구현 계획을 `docs/examples/oathkeeper-task-plan.md`로 이동, 본 파일을 generic template으로 교체
 - [ ] **DOC-03** `README.md` — 현재 제목만 있음 → 프로젝트 설명, Quick Start, 디렉터리 구조, make 타겟, 에이전트 워크플로우 작성
 - [ ] **DOC-04** `docs/agent-workflow.md` 신규 생성 — 에이전트 사용 순서 가이드 + Mermaid 플로우차트 (선택)
 
