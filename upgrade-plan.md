@@ -42,9 +42,9 @@
 
 ## 5단계: Agent/AI Workflow
 
-- [ ] **AI-01** `.claude/agents/dev/backend-developer.md` 신규 생성 — FastAPI, LangGraph, LangChain, Pydantic, async 패턴 전문 에이전트
-- [ ] **AI-02** `.claude/agents/dev/code-reviewer.md` — Python 백엔드 리뷰 기준 섹션 추가 (현재 Next.js 중심)
-- [ ] **AI-03** `.claude/agents/docs/prd-generator.md` — 기본 스택 Supabase/Vercel → 이 템플릿 스택 (FastAPI + LangGraph)으로 수정
+- [x] **AI-01** `.claude/agents/dev/backend-developer.md` 신규 생성 — FastAPI, LangGraph, LangChain, Pydantic, async 패턴 전문 에이전트
+- [x] **AI-02** `.claude/agents/dev/code-reviewer.md` — Python 백엔드 리뷰 기준 섹션 추가 (현재 Next.js 중심)
+- [x] **AI-03** `.claude/agents/docs/prd-generator.md` — 기본 스택 Supabase/Vercel → 이 템플릿 스택 (FastAPI + LangGraph)으로 수정
 - [ ] **AI-04** `.claude/agents/dev/development-planner.md` — `model: opus` → `model: sonnet` 변경 (비용 최적화)
 - [ ] **AI-05** `.claude/agents/docs/prd-validator.md` — `model: opus` → `model: sonnet` 변경 (비용 최적화)
 

@@ -254,18 +254,22 @@ model: sonnet
 - **React Hook Form 7.x** - 폼 상태 관리
 - **Zod** - 스키마 검증 라이브러리
 
-### 🗄️ 백엔드 & 데이터베이스
+### 🗄️ 백엔드 & API
 
-- **Supabase** - BaaS (인증, 데이터베이스, 실시간 구독)
-- **PostgreSQL** - 관계형 데이터베이스 (Supabase 포함)
+- **FastAPI** - 고성능 비동기 Python 웹 프레임워크
+- **Pydantic v2** - 데이터 검증 및 스키마 정의
+- **uvicorn** - ASGI 서버
 
-### 🚀 배포 & 호스팅
+### 🤖 AI/에이전트 프레임워크
 
-- **Vercel** - Next.js 15 최적화 배포 플랫폼
+- **LangGraph** - 상태 기반 AI 에이전트 오케스트레이션
+- **LangChain** - LLM 통합 프레임워크
+- **langchain-anthropic / langchain-openai** - LLM 프로바이더 연동
 
 ### 📦 패키지 관리
 
-- **npm** - 의존성 관리
+- **uv** - Python 의존성 관리
+- **npm** - Node.js 의존성 관리
 ```
 
 ## 📏 작성 가이드라인
@@ -283,7 +287,7 @@ model: sonnet
 - **Next.js 15 기반**: 최신 App Router, 향상된 성능, React 19 지원
 - **TailwindCSS v4**: 설정 파일 없는 새로운 CSS 엔진 활용
 - **TypeScript**: 최신 타입 시스템으로 코드 안정성
-- **Supabase**: 백엔드 인프라 최소화, 실시간 기능
+- **FastAPI + LangGraph**: 고성능 비동기 API 및 AI 에이전트 프레임워크
 - **학습 곡선이 낮고 문서화가 잘 된 최신 기술** 우선
 - **커뮤니티가 활발하고 장기 지원되는 기술** 우선
 
@@ -294,6 +298,9 @@ model: sonnet
 - Next.js 15 (현재 최신버전)
 - React 19 (현재 최신버전)
 - TailwindCSS v4 (설정파일 없는 새로운 방식)
+- FastAPI (비동기 Python 백엔드)
+- LangGraph + LangChain (AI 에이전트 프레임워크)
+- Pydantic v2 (데이터 검증)
 - 각 기술의 최신 버전 확인 후 명시
 
 ## 🔄 처리 프로세스 (정합성 보장)
@@ -305,7 +312,7 @@ model: sonnet
 5. 메뉴 구조 설계 - 전체 내비게이션 체계 (기능 ID와 연결, URL 경로 제외)
 6. 페이지별 상세 기능 명세 - 구현 기능 ID 반드시 포함 (페이지 이름만 사용)
 7. 필요 데이터 모델 최소화
-8. **최신 버전의** Next.js 기반 기술 스택 적용
+8. **최신 버전의** Next.js + FastAPI + LangGraph 기반 기술 스택 적용
 9. **정합성 검증 체크리스트 실행**
 10. 템플릿 형식으로 출력
 
