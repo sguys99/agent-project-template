@@ -100,3 +100,16 @@ ruff format .
 - 비동기: FastAPI 엔드포인트는 `async def` 사용
 - 설정: YAML 파일은 `configs/`에, 경로 상수는 `backend/app/utils/path.py`에서 관리
 - 환경 변수: `python-dotenv` 사용, `.env` 파일은 git에 커밋하지 않음
+
+## 프론트엔드 디자인 가이드
+
+프론트엔드 작업(UI 컴포넌트, 페이지, 레이아웃 생성/수정) 시 반드시 [DESIGN.md](DESIGN.md)를 참조하여 디자인 시스템을 일관되게 적용해야 합니다.
+
+- **컬러**: `DESIGN.md`의 `colors` 토큰만 사용 (예: `{colors.primary}` = #0066cc). 임의의 hex 값 인라인 금지.
+- **타이포그래피**: SF Pro Display/Text 폰트 패밀리와 정의된 타이포 토큰(`hero-display`, `display-lg`, `body` 등) 사용. body 본문은 17px 고정.
+- **컴포넌트**: `DESIGN.md`의 `components` 정의(`button-primary`, `product-tile-light`, `store-utility-card` 등)에 맞춰 구현. radius/padding/색상 토큰 그대로 적용.
+- **간격/모서리**: `spacing`(8px 기반)과 `rounded` 토큰만 사용. 임의 값 금지.
+- **상호작용 색상**: 모든 인터랙티브 요소는 단일 Action Blue(`{colors.primary}`)만 사용. 보조 액센트 컬러 추가 금지.
+- **그림자**: 제품 이미지 외에는 그림자 사용 금지. 카드/버튼/텍스트에 shadow 적용 금지.
+- **Do's and Don'ts**: `DESIGN.md`의 해당 섹션을 항상 준수.
+- UI 작업을 시작하기 전에 `DESIGN.md`의 관련 컴포넌트 정의를 먼저 읽고, 의문이 생기면 토큰 참조(`{token.refs}`)로 해결.
